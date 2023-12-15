@@ -32,7 +32,7 @@ This project serves as a basic template for React applications incorporating rou
    
 ### Just the important
 
-NavReact.jsx component
+**NavReact.jsx component**
    ```bash
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
@@ -51,3 +51,31 @@ function NavReact() {
 }
 
 export default NavReact;
+```
+
+**App.js component**
+   ```bash
+
+import NavReact from './components/navReact'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './views/Home'
+import About from './views/About';
+
+
+function App() {
+  return (
+    <>
+      <Router>
+        <NavReact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
+
+    </>
+  )
+}
+
+export default App
+```
