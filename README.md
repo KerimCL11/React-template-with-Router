@@ -1,8 +1,31 @@
-# React + Vite
+# React Router Application Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project serves as a basic template for React applications incorporating routing functionality with React Router. More to avoid creating the same logic over and over again.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Routing with React Router**: Enables smooth navigation between components without page reloads.
+- **Bootstrap Integration**: For the nav I just use one from react-bootstrap
+- **Clear Project Structure**: Logical organization of files to facilitate project expansion and maintenance.
+
+## File Structure
+
+- `navReact.jsx`: Custom navigation component.
+- `About.jsx`: "About" page component.
+- `Home.jsx`: Main page component.
+- `App.jsx`: Main application component with router setup.
+- `main.jsx`: React application entry point, integrating Bootstrap.
+
+## Usage Instructions
+
+### Prerequisites
+
+- Node.js installed on your system.
+- Install vite
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/krerito/React-template-with-Router.git
